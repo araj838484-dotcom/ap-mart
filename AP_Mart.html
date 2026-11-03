@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffcf00">
+<title>AP Mart | Shop Smarter</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+:root{--yellow:#ffcf00;--blue:#1558c8;--dark:#111d32;--muted:#69758b;--bg:#f5f7fb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--dark);font-family:'DM Sans',sans-serif}button,input,select{font:inherit}button{cursor:pointer}.top{background:var(--dark);color:#fff;text-align:center;padding:8px;font-size:11px;letter-spacing:2px;font-weight:800}.header{background:#fff;padding:16px 5%;display:flex;align-items:center;gap:22px;border-bottom:1px solid #e8edf5;position:sticky;top:0;z-index:5}.brand{display:flex;align-items:center;gap:9px;font:800 25px Outfit,sans-serif;white-space:nowrap}.mark{background:var(--yellow);padding:8px 10px;border-radius:9px;box-shadow:3px 3px #d9a900}.brand b{color:var(--blue)}.search{display:flex;align-items:center;gap:10px;background:#f1f4fa;border-radius:12px;padding:0 14px;flex:1}.search input{border:0;outline:0;background:transparent;width:100%;padding:13px 0}.actions{display:flex;gap:10px;align-items:center}.btn{border:0;border-radius:10px;padding:12px 15px;font-weight:800}.yellow{background:var(--yellow);color:var(--dark)}.blue{background:var(--blue);color:white}.nav{background:white;padding:0 5%;display:flex;gap:8px;overflow:auto;border-bottom:1px solid #e8edf5}.nav button{border:0;background:none;padding:14px 16px;white-space:nowrap;color:#5c6780;font-weight:700}.nav button.active{color:var(--blue);border-bottom:3px solid var(--yellow)}main{max-width:1400px;margin:auto;padding:28px 5% 55px}.hero{background:linear-gradient(115deg,#fff2ad,#fff 52%,#dceaff);border-radius:24px;padding:45px 6%;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px;overflow:hidden}.eyebrow{color:var(--blue);font-size:11px;font-weight:800;letter-spacing:2px}.hero h1{font:800 clamp(40px,5vw,66px)/1.05 Outfit,sans-serif;letter-spacing:-2px;margin:15px 0}.hero h1 span{color:var(--blue)}.hero p{color:var(--muted);line-height:1.6}.offer{font-weight:800;margin:18px 0}.offer strong{font:800 38px Outfit;color:#e34b25}.hero-art{position:relative}.hero-art img{width:100%;height:290px;object-fit:cover;border-radius:22px;box-shadow:0 20px 45px #17233b25}.sale{position:absolute;top:-15px;left:-15px;background:var(--yellow);border-radius:50%;width:125px;height:125px;display:grid;place-content:center;text-align:center;transform:rotate(-9deg);box-shadow:0 8px 25px #0002}.sale strong{font:800 34px Outfit}.sale small{font-weight:800}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:23px 0}.benefit{background:white;border:1px solid #edf0f6;border-radius:14px;padding:17px}.benefit b,.benefit small{display:block}.benefit small{color:var(--muted);margin-top:5px;font-size:12px}.heading{display:flex;justify-content:space-between;align-items:center;gap:15px;margin:25px 0}.heading h2{font:700 30px Outfit;margin:7px 0}.heading p{color:var(--muted);margin:0}.heading select,.form input,.form select{border:1px solid #e1e6ef;background:white;padding:11px;border-radius:9px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:white;border:1px solid #edf0f5;border-radius:16px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:0 12px 30px #18243b12}.photo{height:205px;position:relative;background:#f0f2f6}.photo img{width:100%;height:100%;object-fit:cover}.discount{position:absolute;top:12px;left:12px;background:#e8f6ec;color:#168345;border-radius:6px;padding:6px 8px;font-size:11px;font-weight:800}.info{padding:15px}.cat{font-size:10px;color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:1px}.info h3{font-size:15px;margin:7px 0}.rating{font-size:12px;color:#d89b00}.prices{display:flex;gap:9px;align-items:center;margin:10px 0}.prices strong{font-size:19px}.prices del{color:#9aa2b1;font-size:12px}.add{width:100%;border:0;border-radius:9px;padding:11px;background:var(--yellow);font-weight:800}.admin{background:#fff;border:1px solid #e8edf5;border-radius:16px;padding:22px;margin:22px 0}.admin h2{font:700 25px Outfit;margin:5px 0 18px}.form{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.form label{display:grid;gap:6px;font-size:12px;font-weight:700}.form .wide{grid-column:1/-1}.form input[type=file]{padding:9px}.manage-list{margin-top:18px}.manage-row{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid #edf0f5}.manage-row img{width:48px;height:48px;object-fit:cover;border-radius:8px}.manage-row div{flex:1}.manage-row small{display:block;color:var(--muted)}.delete{border:0;background:#fff0f0;color:#c33;padding:9px;border-radius:8px}.trust{margin-top:25px;background:var(--dark);color:white;border-radius:16px;padding:22px;display:flex;justify-content:space-between;align-items:center;gap:15px}.trust p{color:#c5cede;margin-bottom:0}.cod{color:#ffdb54;font-size:12px;font-weight:800}footer{text-align:center;background:white;padding:30px 15px;color:var(--muted)}footer .brand{justify-content:center;color:var(--dark)}.overlay{position:fixed;inset:0;background:#101b3280;z-index:10;display:flex;justify-content:flex-end}.drawer{background:white;width:min(440px,100%);height:100%;padding:22px;display:flex;flex-direction:column}.drawer-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #eee;padding-bottom:15px}.drawer-head h2{font:700 23px Outfit}.close{border:0;background:#f0f2f6;border-radius:8px;padding:9px}.cart-items{overflow:auto;flex:1}.cart-item{display:flex;gap:13px;padding:14px 0;border-bottom:1px solid #eee}.cart-item img{width:75px;height:75px;object-fit:cover;border-radius:10px}.cart-item div{flex:1}.cart-item strong{display:block;margin:5px 0}.qty{display:flex;align-items:center;gap:12px}.qty button{border:0;background:#f0f2f6;border-radius:6px;padding:4px 10px}.summary{border-top:1px solid #eee;padding-top:15px}.summary-line{display:flex;justify-content:space-between;margin:10px 0}.summary p,.note{font-size:11px;color:var(--muted);line-height:1.5}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--dark);color:white;padding:12px 20px;border-radius:10px;z-index:20;box-shadow:0 5px 25px #0003}.empty{text-align:center;padding:45px 10px;color:var(--muted)}.hidden{display:none!important}
+@media(max-width:850px){.header{gap:10px;flex-wrap:wrap}.brand{font-size:21px}.search{order:3;flex-basis:100%}.actions{margin-left:auto}.grid{grid-template-columns:repeat(2,1fr)}.hero{grid-template-columns:1fr;padding:30px}.hero-art img{height:230px}.benefits{grid-template-columns:1fr}.trust{align-items:flex-start;flex-direction:column}}
+@media(max-width:430px){main{padding:18px 4% 40px}.header{padding:12px 4%}.actions .manage-label{display:none}.grid{gap:10px}.photo{height:150px}.info{padding:11px}.heading h2{font-size:24px}.form{grid-template-columns:1fr}.form .wide{grid-column:auto}.hero h1{font-size:43px}.sale{width:95px;height:95px}.sale strong{font-size:27px}}
+</style>
+</head>
+<body>
+<div class="top">WELCOME TO AP MART • GREAT DEALS EVERY DAY</div>
+<header class="header">
+  <a class="brand" href="#"><span class="mark">AP</span><span>AP <b>Mart</b></span></a>
+  <div class="search">⌕ <input id="search" placeholder="Search products, brands and more..."></div>
+  <div class="actions">
+    <button class="btn" onclick="toggleAdmin()">⚙ <span class="manage-label">Manage Store</span></button>
+    <button class="btn yellow" onclick="toggleCart()">🛒 Cart <span id="cartCount">0</span></button>
+  </div>
+</header>
+<nav class="nav" id="nav"></nav>
+<main>
+  <section class="hero">
+    <div>
+      <span class="eyebrow">THE BIG SHOPPING FEST</span>
+      <h1>Big Deals.<br>Bigger <span>Savings.</span></h1>
+      <p>Discover your favourites at prices you'll love.</p>
+      <div class="offer">UP TO <strong>80% OFF*</strong></div>
+      <button class="btn blue" onclick="document.querySelector('#products').scrollIntoView({behavior:'smooth'})">Shop Now →</button>
+      <p style="font-size:10px">*Offers vary by product. Check product prices for details.</p>
+    </div>
+    <div class="hero-art">
+      <div class="sale"><small>UP TO</small><strong>80%</strong><small>OFF*</small></div>
+      <img src="https://images.unsplash.com/photo-1607082349566-187342175e2f?w=900" alt="Shopping sale">
+    </div>
+  </section>
+  <section class="benefits">
+    <div class="benefit">🚚 <b>Easy Shopping</b><small>Browse your favourites</small></div>
+    <div class="benefit">🛡️ <b>Secure Experience</b><small>Shop with confidence</small></div>
+    <div class="benefit">🏷️ <b>Great Finds</b><small>Something for everyone</small></div>
+  </section>
+  <section id="admin" class="admin hidden">
+    <span class="eyebrow">STORE CONTROL</span><h2>Manage Products</h2>
+    <form class="form" id="productForm">
+      <label>Product name<input id="pname" required placeholder="Example: Bluetooth Speaker"></label>
+      <label>Category<select id="pcat"><option>Electronics</option><option>Fashion</option><option>Home</option><option>Accessories</option></select></label>
+      <label>Selling price (₹)<input id="price" type="number" min="1" required placeholder="499"></label>
+      <label>Original price (₹)<input id="oldPrice" type="number" min="1" placeholder="999"></label>
+      <label class="wide">Image URL (optional)<input id="imageUrl" type="url" placeholder="https://example.com/product.jpg"></label>
+      <label class="wide">Or upload product image<input id="imageFile" type="file" accept="image/*"></label>
+      <button class="btn blue wide" type="submit">＋ Add Product</button>
+    </form>
+    <h3>Existing products</h3><div class="manage-list" id="manageList"></div>
+    <p class="note">Important: products are saved only in this browser on this device. A shared live store requires a database and secure admin login.</p>
+  </section>
+  <section id="products">
+    <div class="heading"><div><span class="eyebrow">HANDPICKED FOR YOU</span><h2 id="sectionTitle">Explore Our Products</h2><p>Find something you'll love.</p></div>
+      <select id="sort"><option value="featured">Featured</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option></select>
+    </div>
+    <div class="grid" id="productGrid"></div>
+  </section>
+  <section class="trust"><div><b>Shopping made simple</b><p>Explore products, compare prices and build your cart.</p></div><span class="cod">CASH ON DELIVERY: NOT AVAILABLE</span></section>
+</main>
+<footer><div class="brand"><span class="mark">AP</span><span>AP <b>Mart</b></span></div><p>Your everyday shopping destination.</p><small>© <span id="year"></span> AP Mart. All rights reserved.</small></footer>
+
+<div id="cartOverlay" class="overlay hidden" onclick="if(event.target===this)toggleCart()">
+  <aside class="drawer">
+    <div class="drawer-head"><h2>🛒 Your Cart (<span id="drawerCount">0</span>)</h2><button class="close" onclick="toggleCart()">✕</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="summary" id="cartSummary"></div>
+  </aside>
+</div>
+<div id="toast" class="toast hidden"></div>
+<script>
+const starter=[
+{id:1,name:"Wireless Headphones",category:"Electronics",price:799,oldPrice:1999,image:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=700",rating:4.5},
+{id:2,name:"Smart Watch",category:"Electronics",price:999,oldPrice:2499,image:"https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=700",rating:4.3},
+{id:3,name:"Premium Sneakers",category:"Fashion",price:1199,oldPrice:2999,image:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700",rating:4.4},
+{id:4,name:"Travel Backpack",category:"Fashion",price:599,oldPrice:1499,image:"https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=700",rating:4.2},
+{id:5,name:"Modern Table Lamp",category:"Home",price:499,oldPrice:999,image:"https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=700",rating:4.1},
+{id:6,name:"Classic Sunglasses",category:"Accessories",price:299,oldPrice:799,image:"https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=700",rating:4.0}
+];
+let products=load("apmart-products",starter),cart=load("apmart-cart",[]),category="All",toastTimer;
+function load(key,fallback){try{return JSON.parse(localStorage.getItem(key))||fallback}catch{return fallback}}
+function save(){localStorage.setItem("apmart-products",JSON.stringify(products));localStorage.setItem("apmart-cart",JSON.stringify(cart))}
+function money(n){return "₹"+Number(n).toLocaleString("en-IN")}
+function notify(msg){const t=document.getElementById("toast");t.textContent=msg;t.classList.remove("hidden");clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.add("hidden"),2300)}
+function renderNav(){const cats=["All","Electronics","Fashion","Home","Accessories"];document.getElementById("nav").innerHTML=cats.map(c=>`<button class="${category===c?'active':''}" onclick="setCategory('${c}')">${c==="All"?"All Products":c}</button>`).join("")}
+function setCategory(c){category=c;renderNav();renderProducts()}
+function renderProducts(){
+ const q=document.getElementById("search").value.toLowerCase(),sort=document.getElementById("sort").value;
+ let list=products.filter(p=>(category==="All"||p.category===category)&&(p.name.toLowerCase().includes(q)||p.category.toLowerCase().includes(q)));
+ if(sort==="low")list.sort((a,b)=>a.price-b.price);if(sort==="high")list.sort((a,b)=>b.price-a.price);
+ document.getElementById("sectionTitle").textContent=category==="All"?"Explore Our Products":category;
+ document.getElementById("productGrid").innerHTML=list.length?list.map(p=>{
+ const off=p.oldPrice>p.price?Math.round((1-p.price/p.oldPrice)*100):0;
+ return `<article class="card"><div class="photo">${off?`<span class="discount">${off}% OFF</span>`:""}<img src="${escapeAttr(p.image)}" alt="${escapeAttr(p.name)}" loading="lazy" onerror="this.src='https://placehold.co/600x600?text=AP+Mart'"></div><div class="info"><span class="cat">${escapeHtml(p.category)}</span><h3>${escapeHtml(p.name)}</h3><div class="rating">★ ${p.rating||"4.5"} · Popular pick</div><div class="prices"><strong>${money(p.price)}</strong>${p.oldPrice>p.price?`<del>${money(p.oldPrice)}</del>`:""}</div><button class="add" onclick="addCart(${p.id})">🛒 Add to Cart</button></div></article>`
+ }).join(""):`<div class="empty" style="grid-column:1/-1">No products found. Try another search or category.</div>`;
+ renderManage();
+}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function escapeAttr(s){return escapeHtml(s)}
+function renderManage(){document.getElementById("manageList").innerHTML=products.map(p=>`<div class="manage-row"><img src="${escapeAttr(p.image)}" alt=""><div><b>${escapeHtml(p.name)}</b><small>${money(p.price)}</small></div><button class="delete" onclick="deleteProduct(${p.id})">🗑</button></div>`).join("")}
+function addCart(id){const p=products.find(x=>x.id===id),found=cart.find(x=>x.id===id);if(found)found.qty++;else cart.push({...p,qty:1});save();renderCart();notify("Added to cart!")}
+function changeQty(id,n){const item=cart.find(x=>x.id===id);if(item)item.qty+=n;cart=cart.filter(x=>x.qty>0);save();renderCart()}
+function renderCart(){
+ const count=cart.reduce((s,x)=>s+x.qty,0),total=cart.reduce((s,x)=>s+x.qty*x.price,0);
+ document.getElementById("cartCount").textContent=count;document.getElementById("drawerCount").textContent=count;
+ document.getElementById("cartItems").innerHTML=cart.length?cart.map(x=>`<div class="cart-item"><img src="${escapeAttr(x.image)}" alt=""><div><b>${escapeHtml(x.name)}</b><strong>${money(x.price)}</strong><div class="qty"><button onclick="changeQty(${x.id},-1)">−</button><span>${x.qty}</span><button onclick="changeQty(${x.id},1)">+</button></div></div></div>`).join(""):`<div class="empty"><h3>Your cart is empty</h3><p>Add products to get started.</p></div>`;
+ document.getElementById("cartSummary").innerHTML=cart.length?`<div class="summary-line"><span>Subtotal</span><b>${money(total)}</b></div><div class="summary-line"><span>Cash on Delivery</span><b style="color:#c33">Not Available</b></div><p>This demo store does not process real payments or orders.</p><button class="btn blue" style="width:100%" onclick="notify('Online checkout is not configured yet.')">Continue to Checkout</button>`:"";
+}
+function toggleCart(){document.getElementById("cartOverlay").classList.toggle("hidden")}
+function toggleAdmin(){document.getElementById("admin").classList.toggle("hidden");if(!document.getElementById("admin").classList.contains("hidden"))document.getElementById("admin").scrollIntoView({behavior:"smooth"})}
+function deleteProduct(id){products=products.filter(p=>p.id!==id);cart=cart.filter(p=>p.id!==id);save();renderProducts();renderCart();notify("Product deleted")}
+document.getElementById("productForm").addEventListener("submit",async e=>{
+ e.preventDefault();const file=document.getElementById("imageFile").files[0],url=document.getElementById("imageUrl").value.trim();
+ let image=url||"https://placehold.co/600x600?text=AP+Mart";
+ if(file){if(file.size>1500000){notify("Choose an image under 1.5 MB");return}image=await new Promise((resolve,reject)=>{const r=new FileReader();r.onload=()=>resolve(r.result);r.onerror=reject;r.readAsDataURL(file)})}
+ const price=Number(document.getElementById("price").value),old=Number(document.getElementById("oldPrice").value)||price;
+ products.unshift({id:Date.now(),name:document.getElementById("pname").value.trim(),category:document.getElementById("pcat").value,price,oldPrice:old,image,rating:4.5});
+ save();e.target.reset();renderProducts();notify("Product added successfully!");
+});
+document.getElementById("search").addEventListener("input",renderProducts);
+document.getElementById("sort").addEventListener("change",renderProducts);
+document.getElementById("year").textContent=new Date().getFullYear();
+renderNav();renderProducts();renderCart();
+</script>
+</body>
+</html>
